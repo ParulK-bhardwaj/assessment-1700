@@ -1,0 +1,89 @@
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: Helvetica, sans-serif }
+
+  main {
+    padding: 2em;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-template-areas:  "a b"
+                          "c d"; 
+
+  }
+
+  section {
+    border: solid grey;
+    border-width: 0.1em;
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 225px;
+    padding: 1em;
+  }
+  
+  .name {
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .name h1, .names p {
+    margin: 0.1em;
+  }
+
+  .input-form {
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .input-form p, .input-display p, .color-display p {
+    margin: 0;
+  }
+
+  input {
+    padding: 0.4em;
+    margin: 0 0.4em; 
+  }
+
+  #color-input {
+    height: 15%;
+    width: 25%;
+  }
+
+  .input-display{
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .input-display h2, .input-display p {
+    margin: 0em;
+  }
+
+  .box {
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #color-box {
+    border: solid black;
+    border-width: 0.01em;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+  }
